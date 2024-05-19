@@ -1,0 +1,26 @@
+* {
+  text-align: center;
+}
+
+.container {
+  margin-top: 15%;
+
+  .title {
+    font-size: large;
+    margin-bottom: 3%;
+  }
+  .description {
+    font-style: oblique;
+    margin-bottom: 3%;
+  }
+  img {
+    width: 250px;
+    height: 300px;
+  }
+  .others {
+    font-size: small;
+  }
+  button {
+    margin-top: 3%;
+  }
+}

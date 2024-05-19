@@ -1,0 +1,36 @@
+.container {
+  margin: 10% 0 0 0;
+
+  .name {
+    margin: 5px;
+    input {
+      width: 250px;
+      height: 40px;
+    }
+  }
+  .lastName {
+    margin: 5px;
+    input {
+      width: 250px;
+      height: 40px;
+    }
+  }
+  .email {
+    margin: 5px;
+    input {
+      width: 250px;
+      height: 40px;
+    }
+  }
+  .password {
+    margin: 5px;
+    input {
+      width: 250px;
+      height: 40px;
+    }
+  }
+  button {
+    width: 250px;
+    height: 40px;
+  }
+}

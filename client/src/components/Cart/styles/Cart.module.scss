@@ -1,0 +1,25 @@
+* {
+  text-align: center;
+}
+
+.container {
+  margin-top: 5%;
+
+  .back {
+    float: left;
+    margin: 0 0 0 10px;
+  }
+
+  .title {
+    font-size: large;
+    margin-bottom: 3%;
+  }
+
+  img {
+    width: 100px;
+    height: 150px;
+  }
+  .price {
+    font-size: small;
+  }
+}

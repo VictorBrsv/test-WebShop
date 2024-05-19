@@ -1,0 +1,37 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 150px;
+  height: 350px;
+  margin-left: 10px;
+  padding: 10px;
+  z-index: 1000;
+
+  .title {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .image {
+    text-align: center;
+  }
+
+  .price {
+    text-align: center;
+  }
+
+  img {
+    height: 100px;
+    width: 80px;
+    text-align: center;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
