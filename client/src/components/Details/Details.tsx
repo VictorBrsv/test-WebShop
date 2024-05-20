@@ -18,10 +18,13 @@ const Details = () => {
 
   useEffect(() => {
     if (productId) {
-      fetch(`https://fakestoreapi.com/products/${productId}`)
-        .then((res) => res.json())
-        .then((json) => dispatch(setDetails(json)))
-        .catch((error) => console.error(error));
+      try {
+        fetch(`https://fakestoreapi.com/products/${productId}`)
+          .then((res) => res.json())
+          .then((json) => dispatch(setDetails(json)));
+      } catch (error) {
+        console.error(error);
+      }
     }
   }, [productId]);
 

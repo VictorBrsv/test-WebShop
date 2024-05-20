@@ -13,9 +13,13 @@ const ProductsList = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('https://fakestoreapi.com/products')
-      .then((res) => res.json())
-      .then((json) => dispatch(setProducts(json)));
+    try {
+      fetch('https://fakestoreapi.com/products')
+        .then((res) => res.json())
+        .then((json) => dispatch(setProducts(json)));
+    } catch (error) {
+      console.error(error);
+    }
   }, []);
 
   const getCart = () => {

@@ -6,7 +6,10 @@ const signup = async (req, res) => {
   try {
     const { name, lastName, email, password } = req.body.data;
     if (!name) {
-      res.status(400).send({ error: 'Password is required' });
+      res
+        .status(400)
+        .json('/////////////////asdfsfsdfsdf')
+        .send({ error: 'Password is required' });
     }
     const hash = await bcrypt.hash(password, 10);
     const data = {
